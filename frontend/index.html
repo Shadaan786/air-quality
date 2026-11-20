@@ -427,7 +427,7 @@
                                         <strong class="small">Backend Integration Active:</strong>
                                     </div>
                                     <p class="text-muted small mb-0">
-                                        Uploaded files are sent directly to the Flask REST endpoint <code>POST http://127.0.0.1:5000/api/upload</code> for server-side Pandas validation, header normalization, and descriptive statistical processing.
+                                        Uploaded files are sent directly to the Flask REST endpoint <code>POST /api/upload</code> for server-side Pandas validation, header normalization, and descriptive statistical processing.
                                     </p>
                                 </div>
                             </div>
@@ -1261,7 +1261,7 @@
                 <div class="modal-body">
                     <div class="p-3 bg-light rounded-3 mb-3">
                         <div class="small text-muted fw-semibold">CONFIGURED API BASE URL</div>
-                        <code class="fs-6 text-primary">http://127.0.0.1:5000/api</code>
+                        <code class="fs-6 text-primary">/api</code>
                     </div>
                     <p class="small text-secondary mb-3">
                         This frontend is built with a separate <code>api.js</code> service client. In Part 1, since the Flask backend is not yet started, the application automatically operates with realistic local demo data.
