@@ -220,7 +220,7 @@ const App = {
             const result = await window.ApiService.checkBackendHealth();
             if (result.connected) {
                 badge.className = 'badge bg-success-subtle text-success border border-success-subtle px-3 py-2 cursor-pointer';
-                badgeText.innerHTML = '<i class="fa-solid fa-circle-check text-success me-1"></i> Flask Backend Live (Port 5000)';
+                badgeText.innerHTML = '<i class="fa-solid fa-circle-check text-success me-1"></i> Flask Backend Live';
 
                 // Mark badges as Live Backend Data
                 document.querySelectorAll('.demo-pill').forEach(pill => {
