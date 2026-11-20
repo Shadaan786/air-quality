@@ -26,9 +26,9 @@ class Config:
     
     # API Configuration
     API_PREFIX = '/api'
-    HOST = os.environ.get('HOST', '127.0.0.1')
+    HOST = os.environ.get('HOST', '0.0.0.0')
     PORT = int(os.environ.get('PORT', 5000))
-    DEBUG = os.environ.get('FLASK_DEBUG', 'True').lower() in ('true', '1', 't')
+    DEBUG = os.environ.get('FLASK_DEBUG', 'False').lower() in ('true', '1', 't')
     
     # Environmental Standard Guidelines (WHO 24-hour benchmarks)
     WHO_GUIDELINES = {
