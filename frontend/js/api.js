@@ -12,7 +12,7 @@
  */
 
 const API_CONFIG = {
-    BASE_URL: 'http://127.0.0.1:5000/api',
+    BASE_URL: `${window.location.origin}/api`,
     TIMEOUT_MS: 3000,
     IS_BACKEND_AVAILABLE: false,
     ACTIVE_DATASET_ID: null
@@ -73,7 +73,7 @@ const ApiService = {
                 }
                 return {
                     connected: true,
-                    message: "Connected to Python Flask Backend (Port 5000)",
+                    message: "Connected to Flask Backend",
                     datasetId: API_CONFIG.ACTIVE_DATASET_ID
                 };
             }
